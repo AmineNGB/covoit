@@ -1,0 +1,7 @@
+<h1>Show <%= @carpool_ride.id %></h1>
+<p></p><%= @carpool_ride.ride_date %></p>
+<p></p><%= @carpool_ride.departure_address %></p>
+<p></p><%= @carpool_ride.arrival_address %></p>
+<p></p><%= @carpool_ride.passenger_number %></p>
+
+<%= link_to "edit", edit_carpool_ride_path(@carpool_ride) %>

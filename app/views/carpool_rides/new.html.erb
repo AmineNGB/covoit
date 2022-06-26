@@ -1,0 +1,11 @@
+<h1>Nouveau trajet</h1>
+
+
+<%= simple_form_for @carpool_ride do |f| %>
+  <%= f.input :departure_address, label: false, placeholder: "Lieu de départ" %>
+  <%= f.input :arrival_address, label: false, placeholder: "Lieu d'arrivé"  %>
+  <%= f.input :ride_date, as: :datetime, input_html: {class: "datetime"} %>
+  <%= f.input :passenger_number, as: :select, collection: 1..8 %>
+  <%= f.submit "Valider !" %>
+<% end %>
+
